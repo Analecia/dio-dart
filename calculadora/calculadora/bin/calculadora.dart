@@ -1,8 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:calculadora/calculadora.dart' as calculadora;
-
 void main(List<String> arguments) {
   print('Bem-Vindo a calculadora !');
 
@@ -11,12 +9,14 @@ void main(List<String> arguments) {
   var numero1 = double.parse(line ?? "0");
 
   print("Informe o segundo número: ");
-  var line = stdin.readLineSync(encoding: utf8);
+  // ignore: unused_local_variable
+  var line1 = stdin.readLineSync(encoding: utf8);
   var numero2 = double.parse(line ?? "0");
 
   print("Informe a operação matemática (+, -, *, /): ");
-  var line = stdin.readLineSync(encoding: utf8);
-  var operacao = line ?? "";
+  // ignore: unused_local_variable
+  var line2 = stdin.readLineSync(encoding: utf8);
+  var operacao = line2 ?? "";
 
   print(numero1);
   print(numero2);
